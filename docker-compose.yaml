@@ -1,0 +1,8 @@
+services:
+  webapi:
+    build: .
+    command: sh -c "npm start"
+    env_file:
+      - .env
+    ports:
+      - '3100:3100'
