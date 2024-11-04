@@ -45,6 +45,6 @@ async function bootstrap() {
       res.send(yamlDocument);
     });
 
-  await app.listen(3100);
+  await app.listen(3100, '0.0.0.0');
 }
 bootstrap();
